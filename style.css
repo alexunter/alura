@@ -41,10 +41,14 @@ color:antiquewhite;
 a{color:rgb(245, 242, 238);
 text-decoration: none;
 font-size: 20px;
+padding:5px;
 }
 
-a:hover{color: rgb(7, 29, 149);
-    font-size: 19px;}
+a:hover{color: rgb(15, 15, 14);
+    font-size: 19px;
+background-color: bisque;
+border-radius: 20px;
+}
 
 li{display: inline;
    }
