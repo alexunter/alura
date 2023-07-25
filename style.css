@@ -35,6 +35,8 @@ nav {
     display: flex;
     width: 40%;
     align-items: last baseline;
+    text-align: center;
+    padding: 15px 15px 5px 5px;
 
 }
 
@@ -42,21 +44,27 @@ ul {
     list-style: none;
     color: antiquewhite;
 
+
 }
 
-a {
+nav a {
     color: rgb(245, 242, 238);
     text-decoration: none;
     font-size: 18px;
     padding: 5px 5px 5px 5px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    
 }
 
-a:hover {
-    color: rgb(15, 15, 14);
-    font-size: 16px;
-    background-color: bisque;
-    border-radius: 20px;
-    opacity: 0.8;
+nav a:hover {
+    color: rgb(235, 224, 160);
+    font-size: 19px;
+
+    margin-bottom: 35px;
+    text-align: center;
+    border-bottom: #000 3px solid;
+    
 }
 
 li {
@@ -97,6 +105,16 @@ main {
     box-shadow: 2px 2px 5px #000;
 
 }
+.icone:hover {
+    width: 62px;
+    height: 62px;;
+   
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000;
+
+}
+
 
 .texto_frase {
     font-family: 'Pangolin', cursive;
