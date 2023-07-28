@@ -7,21 +7,19 @@
 
 body {
     background: rgb(241, 241, 254);
-    background: radial-gradient(circle, rgba(241, 241, 254, 1) 0%, rgba(130, 145, 167, 1) 100%);
-    background-image: url(fundo.jpg);
-    background-size: cover;
-
+    background: radial-gradient(circle, rgba(241, 241, 254, 1) 0%, rgb(22, 58, 112) 100%);
+    /*background-image: url(fundo.jpg);*/
+    background-size:contain ;
 
 }
 
 .titulo_principal {
     margin-left: 50px;
-
     margin: auto;
 }
 
 header {
-    background: #6096B4;
+    background: #031d2b;
     border-bottom: 3px rgb(245, 241, 241) solid;
     box-shadow: 0px 1px 2px #000;
     display: flex;
@@ -40,7 +38,7 @@ nav {
 
 }
 
-ul {
+ .menu{
     list-style: none;
     color: antiquewhite;
 
@@ -67,7 +65,7 @@ nav a:hover {
     
 }
 
-li {
+.menu-item {
     display: inline;
 }
 
@@ -76,7 +74,8 @@ main {
     justify-content: center;
     align-items: center;
     margin: 30px;
-    b
+    
+    
 }
 
 .texto_benvindo {
@@ -85,16 +84,22 @@ main {
     display: flex;
     font-size: 36px;
 }
-
+.texto_curriculum {
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 36px;
+}
 .texto_main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
 }
 
 #logosredes {
-    display: flex;
+       display: grid;
     justify-content: space-around;
-    margin: 0 0
+    margin: 1px 2px;
+   grid-auto-flow:column;
+
 }
 
 .icone {
@@ -103,6 +108,8 @@ main {
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #000;
+    align-self: stretch;
+    margin: 1px 2px;
 
 }
 .icone:hover {
@@ -112,14 +119,77 @@ main {
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #000;
+    margin:2px;
 
 }
 
 
 .texto_frase {
     font-family: 'Pangolin', cursive;
-    font-size: 28px;
+    font-size: 22px;
     color: bisque;
     text-align: center;
-    text-shadow: 2px 2px 1px #000;
+    text-shadow: 1px 1px 1px #000;
+    margin:10px;
 }
+.section_curriculum {background-color: antiquewhite;
+    
+    padding: 20px;
+    border-top: 3px rgb(0, 0, 0) solid;
+    box-shadow: 0px 1px 2px #000;
+    background: radial-gradient(circle,  rgb(189, 190, 193) 0%, rgba(241, 241, 254, 1) 100%);
+    
+    
+}
+.section_curriculum_container
+{display: flex;
+    align-items:self-start;
+    padding-top: 8px;
+
+}
+
+.curriculum {
+    padding: 30px;
+    
+    }
+    .curriculum_esq { border-left: 2px solid #000;
+    border-right: 2px solid #000;  
+    }
+.lista-curriculum {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.section_palestras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height:300px;
+    background: radial-gradient(circle,  rgb(189, 190, 193) 0%, rgba(241, 241, 254, 1) 100%);
+    border-top: 3px rgb(0, 0, 0) solid;
+    font-family: 'Pangolin', cursive;
+    font-size: 28px;
+}
+
+.section_materiais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    height:300px;
+    font-family: 'Pangolin', cursive;
+    font-size: 28px;
+    
+    
+}
+
+h3 {font-family: 'Pangolin', cursive;
+    font-size: 24px;}
+
+.foto {width:150px;
+margin:10px;
+margin-left:0px;
+border-radius: 35px;
+border: 3px solid #031d2b;
+box-shadow: 1px 1px 3px #000;}
